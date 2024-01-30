@@ -1,0 +1,460 @@
+
+PROCEDURAL ORIENTED PROGRAMMING
+-------------------------------
+Javascript
+----------
+- scripting language
+- single thread prgming language - bcz line by line execution .
+- it is also a Dynamically typed language. - Dynamically-typed languages are those (like JavaScript) where the interpreter assigns variables a type at runtime based on the variable's value at the time. (this is not a good property.)
+
+- used in frontend as well as backend
+   * frontend - behaviour
+   * backend - to do logical operations
+
+
+display
+------
+* console.log
+* Template Literals : way of displaying contents.
+  -----------------
+   syntax
+    * should start with back tick and if there is any variable it should be enclosed within the curly bracket and dollar symbol.
+ 
+
+DataTypes
+---------
+* predefined function - which is already defined by the developer who developed the javascript language.
+  - typeof() - predefined function to check the datatype 
+  - Number() - string will be converted into number
+  - parseInt() / Math.floor - to remove decimal points
+-- total 8 data types.
+
+1) string
+2) number
+3) boolean
+
+
+concatenation
+-------------
+- concatenation is the addition of data. 
+
+string + string = string
+number + string = string
+number + number = number
+
+number/string or number%string = string will be converted into number
+
+variable : variables are used to store data.
+* Rules to create variables are called identifiers.
+   - should start with a character.
+   - if there are more than one words then they should be seperated by underscore.
+   - second word of the variable should start with capital letter.
+   
+- variables are case-sensitive
+
+* variable
+  syntax ==> variable_name = data
+  another method syntax ==> keyword variable_name = data
+
+
+keyword - predefined variables.
+---------
+1) const -if we defined a value in const variable then we cannot add another value into it.ie, value is constant througout the pgm. - Reassign of value is not possible
+2) var - value is not constant. Reassigning is possible.
+3) let - can Reassign value - value will reside within the block.
+
+
+Variable Hoisting
+----------------
+defining a variable before it is been declared.
+    (or using a variable before it is created)
+    var - hoisting is possible
+    let and const - hoisting is not possible
+
+
+operators
+---------
+1) Assignment Operators =
+2) Arithmetic Operators 
+        a) +(addition) 
+        b) -(subtraction)  
+        c) *(multiplication)  
+        d) /(division)  
+        e) %(modules/remainder) 
+        f) **(exponential/power)
+3) Relational Operators
+   - it returns boolean value - true or false
+      a) greater than  >
+      b) greater than or equal to  >=
+      c) less than  <
+      d) less than or equal to <=
+      e) ==    compare both left and right in terms of value
+      f) ===   compare both left and right in terms of value and datatype
+4) Logical operators
+   a) AND (&&) - both statement should be true to become the entire condition true
+         T && T = T
+         T && F = F
+         F && T = F
+         F && F = F
+         
+   b) OR (||) - anyone of the statement should be true to become the entire condition true
+         T || T = T
+         T || F = T
+         F || T = T
+         F || F = F
+   c) NOT (!)
+         !T = F
+         !F = T
+
+5) Increment(++) and Decrement operators(--) - position is important
+   syntax = value ++ => value = value + 1
+            value -- => value = value - 1
+
+6) Shorthand operator
+      x = x+y =>  x+=y
+      x = x-y =>  x-=y
+
+7) Ternary operator
+      condition?true:false      (for if and else condition)
+
+8) && - truthy operator 
+      condition && statement     (for if condition only)
+
+
+conditional statements / decision making statement
+-------------------------------------------------
+1) if else 
+      syntax
+      ------
+      
+      if(condition) {
+            statement
+      }
+      else {
+            statement
+      }
+
+* when there is more than two conditions
+      
+      if(condition) {
+
+      }
+      elseif{
+
+      }
+      else {
+
+      }
+
+2)switch case
+   
+Looping statements
+------------------
+1) while
+      
+      syntax
+      -------
+      variable initialization
+      while(condition)
+            {
+               statement/ body of the loop
+               variable value increment/Decrement
+
+            }
+2) for loop
+
+      syntax
+      ------
+      for(variable initialization;condition;increment/Decrement)
+      {
+            statement to execute when the condition is true.
+      }
+            
+
+important programs
+------------------
+* pattern programs
+* palindrome
+* armstrong
+* factorial
+* reverse order
+* prime or not
+
+Nested loop => loop within a loop - pattern printing
+
+
+Functions
+---------
+* to do a same task repeatedly at different portions of the converted
+
+function has 2 parts
+      1) function definition - area where the task is defined
+      2) function call -call is mandatory inorder to execute the task inside the function
+
+function definition - syntax
+----------------------------
+
+function function_name(arg1......argn){
+      task
+}
+
+function call - syntax
+----------------------
+
+function_name(arg1.......argn)
+
+
+* function hoisting - calling a function before it is defined.
+* variables inside the functions having block level scope.
+* if we want to access the  variable outside the function use return.
+* any statement after return statement will not execute
+
+2) Arrow function
+   --------------
+ - ES6 version onwards arrow function is introduced
+ - Doesnot support functional hoisting
+ - syntax
+      - function definition
+            keyword variable = (arg1,arg2,......argn)=>
+                  statements/task
+            
+
+            // if more than one statements
+                   keyword variable = ()=>{
+                  statements/task
+                   }
+            
+      - function call
+            variable_name()
+
+3) Predefined function
+   -------------------
+ - eg: * console.log()
+       * typeof()
+       * parseInt()
+       * alert()
+       * number() - convert a string into number
+       * Math.floor()
+       * setTimeout() - to execute an activity after 
+       * eval() - used to evaluate expressions.
+
+4) call back function 
+   ------------------
+   - calling a function inside another function
+
+5) Nested function
+  ---------------
+  - function definition inside another function definition.
+
+closure property:
+----------------
+* property of parent can be accessed by child but the child property cannot be accessed by parent. 
+(if we defined the variable outside the function and inside the parent function then we cn call it from any function.but if we defined variables inside the child function it cannot be accessed by parent) 
+
+6) synchronous function - there is no timedelay
+7) Asynchronous function - there will be a time delay
+
+      
+DATASTRUCTURE
+-------------
+- Efficient way of storing data
+eg : Array , Queue , stack , tree , linkedlist , list , graph etc....
+
+- string - different location
+- number - all digit in one location
+- length - find total number of locations
+
+* when a value is passed from frontend to logic section it will be passed as a string.
+
+Array : 
+------
+Definition : array is a simple variable that can store more than one data of different types, that can seperated by commas and enclosed within square bracket
+
+* Array is a variable which can store more than one data.
+* Each items will be stored in different locations.
+* index value - starting value 0     0 to length - 1
+* Representation : array = [item 1,item 2,........,item n]
+* array in javascript is infinite. -  size can be dynamically changed.
+
+
+Array operations:
+----------------
+* To add new item into the array as a last item - 
+      1)push -                                           
+            syntax: 
+            ------- 
+            arrayname.push(value)
+      2) unshift - To add new item into the array as the first item
+            syntax: 
+            ------- 
+            arrayname.unshift(value)
+* To delete an item from an array - 
+      3) pop - remove the last item      
+            syntax: 
+            ------- 
+            arrayname.pop(value)
+      4) shift - to remove an item from the first position
+            syntax: 
+            ------- 
+            arrayname.shift(value)
+
+Array Method :
+------------
+1)  flat() - convert two dimensional array into one dimensional array
+    flat(depth) -(if the dimension is more than 2 then we can provide depth to convert into i dimensional)
+     convert any dimensional array into one dimensional array.
+      depth is optional
+      flat(infinity) - convert directly into one dimensional
+2) sort() - return same array - arranged in ascending or descending
+3) forEach() - same as that of for of - it returns void - addition operation cannot be done.
+4) map() - it can fetch each items from the array and returns a new array having the same number of element of the parent array.
+5) reduce() - used to find highest,lowest,total - reduce the total value into one.
+6) filter() - return array satisfying a specific condition.
+7) some() - it returns boolean value (based on condition)
+8) find() - it returns first item satisfying the condition
+9) includes() - it returns boolean value (based on item in the array)
+10) indexOf() - to find the index of an item
+11) splice() - array.splice(index,howmanyitem , item1.........itemn)
+
+String Methods : 
+--------------
+1) split() - to split the string - '' ' ' (based on empty string or space etc...)
+2) Array.from() - split the string directly into individual characters
+3) Replace() - to replace an item in a string - string.replace('item to be replace','replace value')
+4) ReplaceAll() - 
+5) trim() - to remove space at the start and end.
+6) startswitch(value) - to check the given string starts with the specific value - it returns boolean value - case sensitive
+7) endswitch(value) - to check the given string ends with the specific value - it returns boolean value - case sensitive
+8) toLowerCase() - to convert the string into small letter.
+9) toUpperCase() - to convert the string into capital letter.
+10) substring() - (start,end) - will exclude the end index
+
+Different ways to display an array
+----------------------------------
+1) using for loop
+      for(initialization,condition,increment/Decrement)
+
+2) for of loop
+      for(let item of array)
+
+3) for in loop
+      for(let index of array)
+
+
+
+linaer search
+-------------
+A method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+
+Binary Search
+-------------
+- sort - ascending order
+- mid - (first item + last item)/2
+- search item == mid ?
+- mid < search item
+- mid > search item
+
+
+sorting 
+-------
+- sort() - array method to arrange/sort an array in ascending or descending
+two ways 
+    * ascending  - array.sort((a,b=>a-b))      //a-b => a to b
+    * descending - array.sort((a,b=>b-a))
+
+Nested Array - Array within another array.
+------------
+
+Object
+------
+- it can store more than one data but it gives more clarity to the given data
+- syntax
+  ------
+  obj_name={key:value}- each key:value pairs are seperated with commas
+
+- for in - is used to access the key in object.
+- object.assign - add key:value pairs   
+
+spread operator - converts two arrays into one array.
+                - symbol ...  (3 dots)
+
+-------------------------------------------------------------------------
+
+OOPS - OBJECT ORIENTED PROGRAMMING - programming paradigm
+----------------------------------
+ - it is a modern programming paradigm(style) which consider real time entity into object and class
+
+-Basic concepts
+
+1) class - Blueprint which contains common features from which different objects can be created
+2) object - is the real time entity created from the class
+3) reference - memory locations where properties and methods are stored.
+
+- property : the variables inside the class
+- methods : functions inside a class
+- instance variable - to access variables anywhere inside a class.(syntax --- this.property name)
+
+create class
+------------
+syntax
+------
+class classname = {
+      property
+      methods
+      constructor(){} - 
+}
+
+- constructors are used to initialize the property. it is also function/method
+- constructor is a self invoking method (it  will automatically call while running program)
+- it is not mandatory to use all the three components like property,method and constructor in a class
+
+
+pillers of OOPS
+---------------
+1) Inheritance - used to access the property of one class in another (parent class in child)
+      2 types
+      -------
+      a) Classical Inheritance - 
+            i) single level Inheritance
+            ii) multilevel Inheritance
+           - keyword -extends
+      b) Object Inheritance / Prototype inheritance
+           - keyword - proto
+           - between objects.
+2) Polymorphism - many forms
+      a) Method/function overloading - Methods with same name but different arguments.
+            - javascript doesnot support method overloading.
+            - spread operator is used to achieve this operation.(...)
+      b) Method/function overriding - same method name and same argument - last function 
+            - javascript support this concepts
+3) Abstraction -
+4) Encapsulation -
+
+- parent class is also called super class or base class
+- child class is also called derived class or sub class
+
+Exception Handling
+------------------
+Exception : Run Time errors
+- handled by using - try catch 
+                        - try => statement that might commit errors
+                        - catch => how to handle       (at a time one will work either try or catch )
+                        - finally => common statement 
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+                        JAVASCRIPT - frontend
+                        ---------------------
+
+javascript - behaviour to website
+      - javascript doesnot directly access the tag - access dimension
+
+DOM - DOCUMENT OBJECT MODEL
+---------------------------
+- its a Tree structure of html document created by browser 
+
+
+BOM - BROWSER OBJECT MODEL 
+
+
